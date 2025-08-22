@@ -1,3 +1,158 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");*/
+/*@import "tailwindcss";*/
+/*@import "tw-animate-css";*/
+
+/*@theme {*/
+/*    --font-sans: "Mona Sans", ui-sans-serif, system-ui, sans-serif,*/
+/*    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
+/*    --color-dark-200: #475467;*/
+/*    --color-light-blue-100: #c1d3f81a;*/
+/*    --color-light-blue-200: #a7bff14d;*/
+
+/*    --color-badge-green: #d5faf1;*/
+/*    --color-badge-red: #f9e3e2;*/
+/*    --color-badge-yellow: #fceed8;*/
+
+/*    --color-badge-green-text: #254d4a;*/
+/*    --color-badge-red-text: #752522;*/
+/*    --color-badge-yellow-text: #73321b;*/
+/*}*/
+
+/*html,*/
+/*body {*/
+/*    @apply bg-white;*/
+/*}*/
+
+/*main {*/
+/*    @apply min-h-screen pt-10;*/
+/*}*/
+/*h1 {*/
+/*    @apply text-6xl  text-gradient leading-tight tracking-[-2px] font-semibold;*/
+/*}*/
+
+/*h2 {*/
+/*    @apply text-3xl text-dark-200;*/
+/*}*/
+
+/*label {*/
+/*    @apply text-dark-200;*/
+/*}*/
+/*input {*/
+/*    @apply w-full p-4 inset-shadow rounded-2xl focus:outline-none bg-white;*/
+/*}*/
+
+/*textarea {*/
+/*    @apply w-full p-4 inset-shadow rounded-2xl focus:outline-none bg-white;*/
+/*}*/
+
+/*form {*/
+/*    @apply flex flex-col items-start gap-8 w-full;*/
+/*}*/
+
+/*@layer components {*/
+/*    .text-gradient {*/
+/*        @apply bg-clip-text text-transparent bg-gradient-to-r from-[#AB8C95] via-[#000000] to-[#8E97C5];*/
+/*    }*/
+/*    .gradient-border {*/
+/*        @apply bg-gradient-to-b from-light-blue-100 to-light-blue-200 p-4 rounded-2xl;*/
+/*    }*/
+/*    .primary-button {*/
+/*        @apply primary-gradient text-white rounded-full px-4 py-2 cursor-pointer w-full;*/
+/*    }*/
+/*    .resume-nav {*/
+/*        @apply flex flex-row justify-between items-center p-4 border-b border-gray-200;*/
+/*    }*/
+/*    .resume-summary {*/
+/*        @apply flex flex-row items-center justify-center p-4 gap-4;*/
+/*        .category {*/
+/*            @apply flex flex-row gap-2 items-center bg-gray-50 rounded-2xl p-4 w-full justify-between;*/
+/*        }*/
+/*    }*/
+/*    .back-button {*/
+/*        @apply flex flex-row items-center gap-2 border border-gray-200 rounded-lg p-2 shadow-sm;*/
+/*    }*/
+/*    .auth-button {*/
+/*        @apply primary-gradient rounded-full py-4 px-8 cursor-pointer w-[600px] max-md:w-full text-3xl font-semibold text-white;*/
+/*    }*/
+/*    .main-section {*/
+/*        @apply flex flex-col items-center gap-8 pt-12 mx-15 pb-5;*/
+/*    }*/
+/*    .page-heading {*/
+/*        @apply flex flex-col items-center gap-8 max-w-4xl text-center;*/
+/*    }*/
+/*    .resumes-section {*/
+/*        @apply flex flex-wrap max-lg:flex-col gap-6 items-start  w-full max-w-[1850px] justify-evenly;*/
+/*    }*/
+
+/*    .resume-card {*/
+/*        @apply flex flex-col gap-8 h-[560px] w-full lg:w-[450px] xl:w-[490px] bg-white rounded-2xl p-4;*/
+/*    }*/
+
+/*    .resume-card-header {*/
+/*        @apply flex flex-row gap-2 justify-between min-h-[110px] max-sm:flex-col items-center max-md:justify-center max-md:items-center;*/
+/*    }*/
+
+/*    .feedback-section {*/
+/*        @apply flex flex-col gap-8 w-1/2 px-8 max-lg:w-full py-6;*/
+/*    }*/
+
+/*    .navbar {*/
+/*        @apply flex flex-row justify-between items-center bg-white rounded-full p-4 w-full px-10 max-w-[1200px] mx-auto;*/
+/*    }*/
+
+/*    .score-badge {*/
+/*        @apply flex flex-row items-center justify-center py-1 px-2 gap-4 rounded-[96px];*/
+/*    }*/
+
+/*    .form-div {*/
+/*        @apply flex flex-col gap-2 w-full items-start;*/
+/*    }*/
+
+/*    .uplader-drag-area {*/
+/*        @apply relative p-8 text-center transition-all duration-700 cursor-pointer bg-white rounded-2xl min-h-[208px];*/
+/*    }*/
+/*    .uploader-selected-file {*/
+/*        @apply flex items-center justify-between p-3 bg-gray-50 rounded-2xl;*/
+/*    }*/
+/*}*/
+
+/*@utility bg-gradient {*/
+/*    background: linear-gradient(to bottom, #f0f4ff 60%, #fa7185cc);*/
+/*}*/
+
+/*@utility text-gradient {*/
+/*    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#AB8C95] via-[#000000] to-[#8E97C5];*/
+/*}*/
+
+/*@utility gradient-hover {*/
+/*    @apply bg-gradient-to-b from-light-blue-100 to-light-blue-200;*/
+/*}*/
+
+/*@utility primary-gradient {*/
+/*    background: linear-gradient(to bottom, #8e98ff, #606beb);*/
+/*    box-shadow: 0px 74px 21px 0px #6678ef00;*/
+/*}*/
+
+/*@utility primary-gradient-hover {*/
+/*    background: linear-gradient(to bottom, #717dff, #4957eb);*/
+/*}*/
+
+/*@utility inset-shadow {*/
+/*    box-shadow: inset 0 0 12px 0 rgba(36, 99, 235, 0.2);*/
+/*    backdrop-filter: blur(10px);*/
+/*}*/
+
+/*@keyframes fadeIn {*/
+/*    from {*/
+/*        opacity: 0;*/
+/*    }*/
+/*    to {*/
+/*        opacity: 1;*/
+/*    }*/
+/*}*/
+
+/****************************************************************/
+
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
@@ -21,87 +176,106 @@
 html,
 body {
     @apply bg-white;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
 }
 
 main {
-    @apply min-h-screen pt-10;
+    @apply min-h-screen pt-4 md:pt-10;
 }
+
 h1 {
-    @apply text-6xl  text-gradient leading-tight tracking-[-2px] font-semibold;
+    @apply text-4xl md:text-5xl lg:text-6xl text-gradient leading-tight tracking-[-1px] md:tracking-[-2px] font-semibold;
 }
 
 h2 {
-    @apply text-3xl text-dark-200;
+    @apply text-xl md:text-2xl lg:text-3xl text-dark-200;
+}
+
+h3 {
+    @apply text-lg md:text-xl lg:text-2xl font-medium;
 }
 
 label {
-    @apply text-dark-200;
+    @apply text-dark-200 text-sm md:text-base;
 }
+
 input {
-    @apply w-full p-4 inset-shadow rounded-2xl focus:outline-none bg-white;
+    @apply w-full p-3 md:p-4 inset-shadow rounded-xl md:rounded-2xl focus:outline-none bg-white text-sm md:text-base;
 }
 
 textarea {
-    @apply w-full p-4 inset-shadow rounded-2xl focus:outline-none bg-white;
+    @apply w-full p-3 md:p-4 inset-shadow rounded-xl md:rounded-2xl focus:outline-none bg-white text-sm md:text-base;
 }
 
 form {
-    @apply flex flex-col items-start gap-8 w-full;
+    @apply flex flex-col items-start gap-4 md:gap-6 lg:gap-8 w-full;
 }
 
 @layer components {
     .text-gradient {
         @apply bg-clip-text text-transparent bg-gradient-to-r from-[#AB8C95] via-[#000000] to-[#8E97C5];
     }
+
     .gradient-border {
-        @apply bg-gradient-to-b from-light-blue-100 to-light-blue-200 p-4 rounded-2xl;
+        @apply bg-gradient-to-b from-light-blue-100 to-light-blue-200 p-3 md:p-4 rounded-xl md:rounded-2xl;
     }
+
     .primary-button {
-        @apply primary-gradient text-white rounded-full px-4 py-2 cursor-pointer w-full;
+        @apply primary-gradient text-white rounded-full px-4 py-2 md:px-6 md:py-3 text-sm md:text-base cursor-pointer w-full md:w-auto;
     }
+
     .resume-nav {
-        @apply flex flex-row justify-between items-center p-4 border-b border-gray-200;
+        @apply flex flex-col md:flex-row justify-between items-center p-3 md:p-4 border-b border-gray-200 gap-3 md:gap-0;
     }
+
     .resume-summary {
-        @apply flex flex-row items-center justify-center p-4 gap-4;
+        @apply flex flex-col md:flex-row items-center justify-center p-3 md:p-4 gap-3 md:gap-4;
+
         .category {
-            @apply flex flex-row gap-2 items-center bg-gray-50 rounded-2xl p-4 w-full justify-between;
+            @apply flex flex-col md:flex-row gap-2 items-center bg-gray-50 rounded-xl md:rounded-2xl p-3 md:p-4 w-full justify-between;
         }
     }
+
     .back-button {
-        @apply flex flex-row items-center gap-2 border border-gray-200 rounded-lg p-2 shadow-sm;
+        @apply flex flex-row items-center gap-2 border border-gray-200 rounded-lg p-2 shadow-sm text-sm md:text-base;
     }
+
     .auth-button {
-        @apply primary-gradient rounded-full py-4 px-8 cursor-pointer w-[600px] max-md:w-full text-3xl font-semibold text-white;
+        @apply primary-gradient rounded-full py-3 px-6 md:py-4 md:px-8 cursor-pointer w-full md:w-[400px] lg:w-[600px] text-xl md:text-2xl lg:text-3xl font-semibold text-white;
     }
+
     .main-section {
-        @apply flex flex-col items-center gap-8 pt-12 mx-15 pb-5;
+        @apply flex flex-col items-center gap-6 md:gap-8 pt-6 md:pt-12 mx-4 md:mx-8 lg:mx-15 pb-5;
     }
+
     .page-heading {
-        @apply flex flex-col items-center gap-8 max-w-4xl text-center;
+        @apply flex flex-col items-center gap-4 md:gap-6 lg:gap-8 max-w-4xl text-center px-4 md:px-0;
     }
+
     .resumes-section {
-        @apply flex flex-wrap max-lg:flex-col gap-6 items-start  w-full max-w-[1850px] justify-evenly;
+        @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 items-start w-full max-w-[1850px] justify-center px-4 md:px-0;
     }
 
     .resume-card {
-        @apply flex flex-col gap-8 h-[560px] w-full lg:w-[450px] xl:w-[490px] bg-white rounded-2xl p-4;
+        @apply flex flex-col gap-4 md:gap-6 h-auto md:h-[500px] lg:h-[560px] w-full bg-white rounded-xl md:rounded-2xl p-3 md:p-4;
     }
 
     .resume-card-header {
-        @apply flex flex-row gap-2 justify-between min-h-[110px] max-sm:flex-col items-center max-md:justify-center max-md:items-center;
+        @apply flex flex-col md:flex-row gap-2 justify-between min-h-auto md:min-h-[110px] items-center;
     }
 
     .feedback-section {
-        @apply flex flex-col gap-8 w-1/2 px-8 max-lg:w-full py-6;
+        @apply flex flex-col gap-4 md:gap-6 lg:gap-8 w-full lg:w-1/2 px-4 md:px-6 lg:px-8 py-4 md:py-6;
     }
 
     .navbar {
-        @apply flex flex-row justify-between items-center bg-white rounded-full p-4 w-full px-10 max-w-[1200px] mx-auto;
+        @apply flex flex-col md:flex-row justify-between items-center bg-white rounded-xl md:rounded-full p-3 md:p-4 w-full px-4 md:px-6 lg:px-10 max-w-[1200px] mx-auto gap-3 md:gap-0;
     }
 
     .score-badge {
-        @apply flex flex-row items-center justify-center py-1 px-2 gap-4 rounded-[96px];
+        @apply flex flex-row items-center justify-center py-1 px-2 gap-2 md:gap-4 rounded-[96px] text-xs md:text-sm;
     }
 
     .form-div {
@@ -109,10 +283,40 @@ form {
     }
 
     .uplader-drag-area {
-        @apply relative p-8 text-center transition-all duration-700 cursor-pointer bg-white rounded-2xl min-h-[208px];
+        @apply relative p-4 md:p-6 lg:p-8 text-center transition-all duration-700 cursor-pointer bg-white rounded-xl md:rounded-2xl min-h-[160px] md:min-h-[208px];
     }
+
     .uploader-selected-file {
-        @apply flex items-center justify-between p-3 bg-gray-50 rounded-2xl;
+        @apply flex items-center justify-between p-2 md:p-3 bg-gray-50 rounded-xl md:rounded-2xl;
+    }
+
+    /* New responsive utilities */
+    .mobile-only {
+        @apply block md:hidden;
+    }
+
+    .desktop-only {
+        @apply hidden md:block;
+    }
+
+    .tablet-up {
+        @apply hidden sm:block;
+    }
+
+    /* Container utilities */
+    .container-responsive {
+        @apply w-full px-4 md:px-6 lg:px-8 mx-auto;
+        max-width: 1200px;
+    }
+
+    /* Flex utilities for responsive layouts */
+    .flex-responsive {
+        @apply flex flex-col md:flex-row;
+    }
+
+    /* Grid utilities for responsive layouts */
+    .grid-responsive {
+        @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4;
     }
 }
 
@@ -148,5 +352,282 @@ form {
     }
     to {
         opacity: 1;
+    }
+}
+
+/* Responsive media queries */
+@media (max-width: 640px) {
+    .container {
+        @apply px-4;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+
+    .resume-card img {
+        height: 180px;
+    }
+
+    /* Mobile-specific adjustments */
+    .mobile-text-sm {
+        font-size: 0.875rem;
+    }
+
+    .mobile-p-2 {
+        padding: 0.5rem;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+    .container {
+        @apply px-6;
+    }
+
+    .resume-card img {
+        height: 220px;
+    }
+
+    /* Tablet-specific adjustments */
+    .tablet-text-base {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        @apply px-8;
+    }
+
+    .resume-card img {
+        height: 280px;
+    }
+
+    /* Large tablet adjustments */
+    .large-tablet-text-lg {
+        font-size: 1.125rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        @apply px-10;
+    }
+
+    .resume-card img {
+        height: 350px;
+    }
+
+    /* Desktop-specific adjustments */
+    .desktop-text-xl {
+        font-size: 1.25rem;
+    }
+}
+
+/* Touch device improvements */
+@media (hover: none) and (pointer: coarse) {
+    button,
+    .primary-button,
+    .auth-button {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    input,
+    textarea {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+
+    /* Increase touch target size for mobile */
+    .touch-target {
+        min-height: 44px;
+        min-width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* High contrast mode support - CORRECTED */
+@media (prefers-contrast: more) {
+    .gradient-border {
+        border: 2px solid #000 !important;
+        background: #fff !important;
+    }
+
+    .primary-button {
+        border: 2px solid #000 !important;
+        background: #000 !important;
+        color: #fff !important;
+    }
+
+    .text-gradient {
+        color: #000 !important;
+        background: none !important;
+    }
+
+    /* Ensure text is readable in high contrast */
+    h1, h2, h3, p, span, div {
+        color: #000 !important;
+    }
+
+    /* Add borders to interactive elements */
+    button, input, textarea, select {
+        border: 1px solid #000 !important;
+    }
+
+    /* Improve visibility of images in high contrast mode */
+    img {
+        filter: contrast(1.5);
+    }
+
+    /* Score badges in high contrast */
+    .score-badge {
+        border: 1px solid #000 !important;
+    }
+
+    /* Resume card improvements */
+    .resume-card {
+        border: 1px solid #000 !important;
+    }
+}
+
+/* Reduced contrast mode support */
+@media (prefers-contrast: less) {
+    .gradient-border {
+        opacity: 0.9;
+    }
+
+    .text-gradient {
+        opacity: 0.8;
+    }
+
+    .primary-button {
+        opacity: 0.9;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    html, body {
+        background-color: #1a1a1a;
+        color: #ffffff;
+    }
+
+    .resume-card,
+    .navbar {
+        background-color: #2d2d2d;
+        color: #ffffff;
+    }
+
+    input,
+    textarea {
+        background-color: #3d3d3d;
+        color: #ffffff;
+        border-color: #555;
+    }
+
+    .gradient-border {
+        background: #2d2d2d !important;
+        border: 1px solid #555 !important;
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .primary-button,
+    .auth-button {
+        display: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+        background: white !important;
+        color: black !important;
+    }
+
+    .resume-card {
+        break-inside: avoid;
+        box-shadow: none !important;
+        border: 1px solid #ccc !important;
+    }
+}
+
+/* Orientation-based styles */
+@media (orientation: portrait) {
+    .portrait-hidden {
+        display: none;
+    }
+}
+
+@media (orientation: landscape) {
+    .landscape-hidden {
+        display: none;
+    }
+
+    /* Adjust padding for landscape on mobile */
+    @media (max-width: 768px) {
+        .main-section {
+            padding-top: 2rem;
+        }
+    }
+}
+
+/* Very small devices (phones, 360px and down) */
+@media (max-width: 360px) {
+    h1 {
+        font-size: 1.875rem;
+    }
+
+    .resume-card {
+        padding: 1rem;
+    }
+
+    .main-section {
+        padding-top: 1rem;
+    }
+}
+
+/* Large devices (large desktops, 1440px and up) */
+@media (min-width: 1440px) {
+    .container-responsive {
+        max-width: 1400px;
+    }
+
+    .resumes-section {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Ultra-wide screens */
+@media (min-width: 1920px) {
+    .container-responsive {
+        max-width: 1800px;
+    }
+
+    .resumes-section {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* Fix for iOS Safari viewport height issue */
+@supports (-webkit-touch-callout: none) {
+    .min-h-screen {
+        min-height: -webkit-fill-available;
     }
 }
